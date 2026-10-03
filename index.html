@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CareerMile — Know your next career step</title>
+  <meta name="description" content="CareerMile is a guided career progression system for starting work, changing direction and progressing in your career. Apply to join the free pilot.">
+  <meta name="theme-color" content="#102337">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23102337'/%3E%3Cpath d='M47 15C40 9 30 9 22 14 12 20 9 34 15 44 20 52 31 55 40 50' fill='none' stroke='%2300B4A6' stroke-width='5' stroke-linecap='round'/%3E%3Cpath d='M18 43l11-17 8 10 12-19' fill='none' stroke='white' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --navy: #102337;
+      --navy-deep: #081725;
+      --teal: #00a99d;
+      --teal-bright: #00c9ba;
+      --teal-soft: #e8f8f6;
+      --ink: #172b3a;
+      --muted: #5e707d;
+      --line: #d9e3e7;
+      --paper: #f6f9fa;
+      --white: #fff;
+      --shadow: 0 20px 60px rgba(8, 23, 37, .12);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--white);
+      font-family: Inter, Aptos, "Segoe UI", Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    .skip-link { position: absolute; left: -999px; top: 0; }
+    .skip-link:focus { left: 1rem; top: 1rem; z-index: 20; padding: .75rem 1rem; background: white; color: var(--navy); }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+    .site-header {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 1.3rem 0;
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+    .logo { width: 250px; height: auto; display: block; }
+    .nav-link { color: #e7f0f3; text-decoration: none; font-weight: 700; font-size: .95rem; }
+    .hero {
+      position: relative;
+      min-height: 760px;
+      display: grid;
+      align-items: center;
+      overflow: hidden;
+      color: white;
+      background:
+        radial-gradient(circle at 84% 22%, rgba(0, 201, 186, .22), transparent 28%),
+        linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 62%, #103647 100%);
+    }
+    .hero::before, .hero::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(0, 201, 186, .25);
+      border-radius: 50%;
+    }
+    .hero::before { width: 540px; height: 540px; right: -180px; top: 85px; }
+    .hero::after { width: 350px; height: 350px; right: -85px; top: 180px; }
+    .hero-grid { position: relative; z-index: 2; display: grid; grid-template-columns: 1.25fr .75fr; gap: 5rem; align-items: center; padding: 8rem 0 5rem; }
+    .eyebrow { margin: 0 0 1.1rem; color: var(--teal-bright); font-size: .8rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+    h1 { margin: 0; max-width: 760px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(3rem, 6vw, 5.8rem); font-weight: 600; line-height: .98; letter-spacing: -.035em; }
+    .hero-lead { max-width: 650px; margin: 1.7rem 0 0; color: #d8e5e9; font-size: clamp(1.1rem, 2vw, 1.3rem); line-height: 1.65; }
+    .actions { display: flex; flex-wrap: wrap; gap: .9rem; align-items: center; margin-top: 2rem; }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: .8rem 1.3rem; border-radius: 8px; text-decoration: none; font-weight: 800; }
+    .button-primary { color: var(--navy-deep); background: var(--teal-bright); box-shadow: 0 10px 24px rgba(0, 201, 186, .2); }
+    .button-primary:hover { background: #24d8cc; transform: translateY(-1px); }
+    .button-secondary { color: white; border: 1px solid rgba(255,255,255,.4); }
+    .button-secondary:hover { border-color: white; background: rgba(255,255,255,.07); }
+    .microcopy { margin: .9rem 0 0; color: #abc0c8; font-size: .9rem; }
+    .route-panel { position: relative; padding: 1.25rem; border: 1px solid rgba(255,255,255,.16); border-radius: 18px; background: rgba(255,255,255,.065); backdrop-filter: blur(8px); }
+    .route-panel::before { content: ""; position: absolute; left: 38px; top: 58px; bottom: 58px; width: 2px; background: linear-gradient(var(--teal-bright), rgba(0,201,186,.15)); }
+    .route { position: relative; display: grid; grid-template-columns: 36px 1fr; gap: 1rem; padding: 1rem .6rem; }
+    .route-dot { position: relative; z-index: 2; width: 18px; height: 18px; margin: .15rem auto 0; border: 4px solid var(--navy); border-radius: 50%; background: var(--teal-bright); box-shadow: 0 0 0 2px rgba(0,201,186,.3); }
+    .route strong { display: block; color: white; font-size: 1rem; }
+    .route span { color: #b9ccd2; font-size: .88rem; }
+    .section { padding: 6.5rem 0; }
+    .section-soft { background: var(--paper); }
+    .section-dark { color: white; background: var(--navy); }
+    .section-head { max-width: 740px; margin-bottom: 3rem; }
+    h2 { margin: 0; color: var(--navy); font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.1rem, 4vw, 3.7rem); line-height: 1.08; letter-spacing: -.025em; }
+    .section-dark h2 { color: white; }
+    .section-head p { margin: 1rem 0 0; color: var(--muted); font-size: 1.1rem; }
+    .section-dark .section-head p { color: #b9ccd2; }
+    .audience-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
+    .audience-card { min-height: 260px; padding: 1.7rem; border: 1px solid var(--line); border-radius: 14px; background: white; box-shadow: 0 9px 28px rgba(16, 35, 55, .055); }
+    .card-number { display: inline-grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; color: var(--navy); background: var(--teal-soft); font-size: .85rem; font-weight: 900; }
+    h3 { margin: 1.4rem 0 .6rem; color: var(--navy); font-size: 1.25rem; line-height: 1.25; }
+    .audience-card p { margin: 0; color: var(--muted); }
+    .process { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; overflow: hidden; border: 1px solid rgba(255,255,255,.14); border-radius: 14px; background: rgba(255,255,255,.14); }
+    .process-step { min-height: 245px; padding: 1.7rem; background: var(--navy); }
+    .step-label { color: var(--teal-bright); font-size: .75rem; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
+    .process-step h3 { margin-top: 2.2rem; color: white; }
+    .process-step p { margin: 0; color: #b9ccd2; font-size: .95rem; }
+    .pilot-grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: 4.5rem; align-items: start; }
+    .pilot-note { padding: 2rem; border-left: 5px solid var(--teal); background: var(--teal-soft); }
+    .pilot-note strong { display: block; margin-bottom: .4rem; color: var(--navy); font-size: 1.1rem; }
+    .checklist { display: grid; gap: .85rem; margin: 0; padding: 0; list-style: none; }
+    .checklist li { position: relative; padding: 1rem 1rem 1rem 3.2rem; border: 1px solid var(--line); border-radius: 10px; background: white; }
+    .checklist li::before { content: "✓"; position: absolute; left: 1.1rem; top: 1rem; display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; color: white; background: var(--teal); font-weight: 900; }
+    .checklist strong { display: block; color: var(--navy); }
+    .checklist span { color: var(--muted); font-size: .93rem; }
+    .principle { max-width: 900px; margin: 0 auto; text-align: center; }
+    .principle blockquote { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.2; letter-spacing: -.02em; }
+    .principle p { max-width: 670px; margin: 1.5rem auto 0; color: #b9ccd2; }
+    .faq { display: grid; gap: .75rem; max-width: 850px; }
+    details { padding: 1.15rem 1.25rem; border: 1px solid var(--line); border-radius: 10px; background: white; }
+    summary { color: var(--navy); cursor: pointer; font-weight: 800; }
+    details p { margin: .8rem 0 0; color: var(--muted); }
+    .final-cta { padding: 5rem 0; color: white; background: var(--teal); }
+    .final-grid { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+    .final-grid h2 { max-width: 680px; color: white; }
+    .final-cta .button { color: var(--navy); background: white; white-space: nowrap; }
+    footer { padding: 2rem 0; background: var(--navy-deep); color: #a9bec6; font-size: .9rem; }
+    .footer-grid { display: flex; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
+    footer a { color: white; }
+    @media (max-width: 860px) {
+      .hero { min-height: auto; }
+      .hero-grid, .pilot-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .hero-grid { padding-top: 8.2rem; }
+      .route-panel { max-width: 600px; }
+      .audience-grid { grid-template-columns: 1fr; }
+      .audience-card { min-height: 0; }
+      .process { grid-template-columns: 1fr 1fr; }
+      .final-grid { align-items: flex-start; flex-direction: column; }
+    }
+    @media (max-width: 560px) {
+      .wrap { width: min(100% - 28px, 1120px); }
+      .logo { width: 205px; }
+      .nav-link { display: none; }
+      .hero-grid { padding-bottom: 4rem; }
+      h1 { font-size: clamp(2.8rem, 14vw, 4.1rem); }
+      .section { padding: 4.5rem 0; }
+      .process { grid-template-columns: 1fr; }
+      .process-step { min-height: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .button-primary:hover { transform: none; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="#top" aria-label="CareerMile home">
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 144" role="img" aria-labelledby="logo-title logo-desc">
+          <title id="logo-title">CareerMile</title><desc id="logo-desc">The Career Progression System</desc>
+          <g transform="translate(8 8)"><rect width="128" height="128" rx="28" fill="#00B4A6"/><path d="M91 31C80 20 63 16 48 21C30 27 19 43 19 62C19 83 34 101 54 106C69 109 84 104 94 94" fill="none" stroke="#102337" stroke-width="9" stroke-linecap="round"/><path d="M38 85L55 59L70 77L94 41" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="38" cy="85" r="5.5" fill="#102337" stroke="#00B4A6" stroke-width="2"/><circle cx="55" cy="59" r="5.5" fill="#102337" stroke="#00B4A6" stroke-width="2"/><circle cx="70" cy="77" r="5.5" fill="#102337" stroke="#00B4A6" stroke-width="2"/><path d="M84 40L98 37L96 51" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+          <text x="166" y="73" fill="#FFFFFF" font-family="Aptos,Segoe UI,Arial,sans-serif" font-size="52" font-weight="800" letter-spacing="1.5">CAREER<tspan fill="#00D2C2">MILE</tspan></text><text x="169" y="104" fill="#D8E5E8" font-family="Aptos,Segoe UI,Arial,sans-serif" font-size="18" font-weight="600" letter-spacing="2.6">THE CAREER PROGRESSION SYSTEM</text>
+        </svg>
+      </a>
+      <a class="nav-link" href="mailto:hello@careermile.co.uk">hello@careermile.co.uk</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Applications open · Free seven-day pilot</p>
+          <h1>Know your next career step.</h1>
+          <p class="hero-lead">CareerMile helps you understand where you are, recognise the evidence you already have and take a practical next step—whether you are starting work, changing direction or ready to progress.</p>
+          <div class="actions">
+            <a class="button button-primary" href="mailto:hello@careermile.co.uk?subject=CareerMile%20pilot%20application&amp;body=Hello%20CareerMile%2C%0A%0AI%27d%20like%20to%20take%20part%20in%20the%20seven-day%20pilot.%0A%0AMy%20current%20career%20situation%20is%3A%20%0A%0AWhat%20I%27d%20most%20like%20help%20with%3A%20%0A%0AThank%20you.">Apply to test CareerMile</a>
+            <a class="button button-secondary" href="#how-it-works">How the pilot works</a>
+          </div>
+          <p class="microcopy">No payment required. We ask for honest feedback in return.</p>
+        </div>
+        <div class="route-panel" aria-label="The CareerMile journey">
+          <div class="route"><span class="route-dot" aria-hidden="true"></span><div><strong>Discover</strong><span>Understand your starting point</span></div></div>
+          <div class="route"><span class="route-dot" aria-hidden="true"></span><div><strong>Build</strong><span>Turn experience into useful evidence</span></div></div>
+          <div class="route"><span class="route-dot" aria-hidden="true"></span><div><strong>Target</strong><span>Choose opportunities that fit</span></div></div>
+          <div class="route"><span class="route-dot" aria-hidden="true"></span><div><strong>Act</strong><span>Take a focused next step</span></div></div>
+          <div class="route"><span class="route-dot" aria-hidden="true"></span><div><strong>Progress</strong><span>Keep growing after you get the job</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Built for real career journeys</p>
+          <h2>You do not need years of experience to have something valuable to build on.</h2>
+          <p>CareerMile starts with your situation rather than assuming everyone has the same goal, confidence or work history.</p>
+        </div>
+        <div class="audience-grid">
+          <article class="audience-card"><span class="card-number">01</span><h3>Starting out</h3><p>Recognise useful skills from education, caring, volunteering, projects, hobbies and everyday responsibilities—and learn how to explain them.</p></article>
+          <article class="audience-card"><span class="card-number">02</span><h3>Changing direction</h3><p>Work out what should come with you, what needs to change and which opportunities deserve your time.</p></article>
+          <article class="audience-card"><span class="card-number">03</span><h3>Moving forward</h3><p>Capture evidence, build confidence, prepare for greater responsibility and make progression conversations more useful.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="how-it-works">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">The pilot</p><h2>A short test with a useful outcome.</h2><p>This is not an exam. We are testing CareerMile—not testing you.</p></div>
+        <div class="process">
+          <article class="process-step"><span class="step-label">Step 1</span><h3>Tell us where you are</h3><p>A brief introduction helps us provide the most relevant version.</p></article>
+          <article class="process-step"><span class="step-label">Step 2</span><h3>Use CareerMile</h3><p>Complete the starting assessment and one route relevant to you.</p></article>
+          <article class="process-step"><span class="step-label">Step 3</span><h3>Try it for seven days</h3><p>Return when useful and notice what helps, confuses or feels unnecessary.</p></article>
+          <article class="process-step"><span class="step-label">Step 4</span><h3>Be honest with us</h3><p>Share what worked and what should change. Polite praise is less useful than the truth.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap pilot-grid">
+        <div>
+          <p class="eyebrow">What you receive</p>
+          <h2>Guidance you can use—not another pile of generic advice.</h2>
+          <div class="pilot-note"><strong>The first pilot is free.</strong>You receive access to the guided CareerMile experience and the finished digital workbook in return for completing the test and providing feedback.</div>
+        </div>
+        <ul class="checklist">
+          <li><strong>A clear starting point</strong><span>See what deserves attention now rather than trying to fix everything.</span></li>
+          <li><strong>A guided route</strong><span>Prompts explain why each task matters and what a useful answer could contain.</span></li>
+          <li><strong>Reusable career evidence</strong><span>Capture examples you can return to for applications, interviews and reviews.</span></li>
+          <li><strong>Support beyond getting hired</strong><span>Plan your first 90 days, development, promotion or next change.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="wrap principle">
+        <p class="eyebrow">The CareerMile principle</p>
+        <blockquote>Progress does not require having your whole career figured out. It begins with one useful next step.</blockquote>
+        <p>CareerMile will not promise a job or promotion. It is designed to help you make clearer decisions, communicate your value and take action with better evidence.</p>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">Questions</p><h2>Before you apply</h2></div>
+        <div class="faq">
+          <details><summary>Who can take part?</summary><p>We are looking for adults seeking a first job, returning to work, changing careers, developing in a current role or considering promotion.</p></details>
+          <details><summary>How much time will it take?</summary><p>Allow around 20–30 minutes for the first session, then use it naturally during the following seven days. The final feedback should take approximately ten minutes.</p></details>
+          <details><summary>Do I need to share private career information?</summary><p>No. Use general or anonymised examples wherever you prefer. Do not enter information that you would be uncomfortable storing on your own device.</p></details>
+          <details><summary>Is CareerMile already a finished app?</summary><p>No. This pilot uses an interactive prototype and digital workbook. Your feedback will help determine what should become part of the future subscription service.</p></details>
+          <details><summary>What happens to my email address?</summary><p>We use it to administer the pilot and respond to you. We will not add you to marketing emails unless you separately choose to receive them.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="wrap final-grid">
+        <h2>Help shape a career system built around real people and real progress.</h2>
+        <a class="button" href="mailto:hello@careermile.co.uk?subject=CareerMile%20pilot%20application&amp;body=Hello%20CareerMile%2C%0A%0AI%27d%20like%20to%20take%20part%20in%20the%20seven-day%20pilot.%0A%0AMy%20current%20career%20situation%20is%3A%20%0A%0AWhat%20I%27d%20most%20like%20help%20with%3A%20%0A%0AThank%20you.">Apply for the pilot</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <span>© 2026 CareerMile · The Career Progression System</span>
+      <span>Questions? <a href="mailto:hello@careermile.co.uk">hello@careermile.co.uk</a></span>
+    </div>
+  </footer>
+</body>
+</html>
