@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://careermile.co.uk/sitemap.xml
