@@ -3,296 +3,191 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CareerMile — Know your next career step</title>
-  <meta name="description" content="CareerMile is a guided career progression system for starting work, changing direction and progressing in your career. Apply to join the free pilot.">
+  <title>CareerMile — Turn your experience into your next step</title>
+  <meta name="description" content="Recognise your strengths, build evidence from real experience and choose a practical career step. Explore a CareerMile example or enquire about the free adult pilot.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://careermile.co.uk/">
+  <meta name="theme-color" content="#102337">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="CareerMile">
-  <meta property="og:title" content="CareerMile — Know your next career step">
-  <meta property="og:description" content="A guided career progression system for starting work, changing direction and progressing in your career.">
+  <meta property="og:title" content="CareerMile — Turn your experience into your next step">
+  <meta property="og:description" content="Turn everyday experience into evidence you can use. Explore fictional examples and enquire about the invitation-only adult pilot.">
   <meta property="og:url" content="https://careermile.co.uk/">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="CareerMile — Know your next career step">
-  <meta name="twitter:description" content="A guided career progression system for starting work, changing direction and progressing in your career.">
-  <meta name="theme-color" content="#102337">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23102337'/%3E%3Cpath d='M47 15C40 9 30 9 22 14 12 20 9 34 15 44 20 52 31 55 40 50' fill='none' stroke='%2300B4A6' stroke-width='5' stroke-linecap='round'/%3E%3Cpath d='M18 43l11-17 8 10 12-19' fill='none' stroke='white' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://careermile.co.uk/#website",
-        "url": "https://careermile.co.uk/",
-        "name": "CareerMile",
-        "description": "A guided career progression system for starting work, changing direction and progressing in your career.",
-        "inLanguage": "en-GB"
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://careermile.co.uk/#organization",
-        "name": "CareerMile",
-        "url": "https://careermile.co.uk/",
-        "email": "hello@careermile.co.uk",
-        "description": "CareerMile helps people take practical next steps when starting work, changing career direction or progressing at work."
-      }
-    ]
-  }
-  </script>
+  <meta property="og:image" content="https://careermile.co.uk/assets/careermile-social.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="CareerMile: Your experience has a next chapter. Experience, evidence, next step.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CareerMile — Turn your experience into your next step">
+  <meta name="twitter:description" content="Practical career-development tools, grounded in your experience. Invitation-only pilot enquiries.">
+  <meta name="twitter:image" content="https://careermile.co.uk/assets/careermile-social.png">
+  <meta name="twitter:image:alt" content="CareerMile: Your experience has a next chapter. Experience, evidence, next step.">
+  <link rel="icon" href="assets/careermile-icon.svg" type="image/svg+xml">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://careermile.co.uk/#website","url":"https://careermile.co.uk/","name":"CareerMile","inLanguage":"en-GB","description":"Guided career reflection, evidence building and practical next steps.","publisher":{"@id":"https://careermile.co.uk/#organization"}},{"@type":"Organization","@id":"https://careermile.co.uk/#organization","url":"https://careermile.co.uk/","name":"CareerMile","email":"hello@careermile.co.uk","logo":"https://careermile.co.uk/assets/careermile-icon.svg"}]}</script>
   <style>
-    :root {
-      --navy: #102337;
-      --navy-deep: #081725;
-      --teal: #00a99d;
-      --teal-bright: #00c9ba;
-      --teal-soft: #e8f8f6;
-      --ink: #172b3a;
-      --muted: #5e707d;
-      --line: #d9e3e7;
-      --paper: #f6f9fa;
-      --white: #fff;
-      --shadow: 0 20px 60px rgba(8, 23, 37, .12);
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      color: var(--ink);
-      background: var(--white);
-      font-family: Inter, Aptos, "Segoe UI", Arial, sans-serif;
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-    a { color: inherit; }
-    .skip-link { position: absolute; left: -999px; top: 0; }
-    .skip-link:focus { left: 1rem; top: 1rem; z-index: 20; padding: .75rem 1rem; background: white; color: var(--navy); }
-    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
-    .site-header {
-      position: absolute;
-      z-index: 10;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 1.3rem 0;
-    }
-    .nav { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
-    .logo { width: 250px; height: auto; display: block; }
-    .nav-link { color: #e7f0f3; text-decoration: none; font-weight: 700; font-size: .95rem; }
-    .hero {
-      position: relative;
-      min-height: 760px;
-      display: grid;
-      align-items: center;
-      overflow: hidden;
-      color: white;
-      background:
-        radial-gradient(circle at 84% 22%, rgba(0, 201, 186, .22), transparent 28%),
-        linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 62%, #103647 100%);
-    }
-    .hero::before, .hero::after {
-      content: "";
-      position: absolute;
-      border: 1px solid rgba(0, 201, 186, .25);
-      border-radius: 50%;
-    }
-    .hero::before { width: 540px; height: 540px; right: -180px; top: 85px; }
-    .hero::after { width: 350px; height: 350px; right: -85px; top: 180px; }
-    .hero-grid { position: relative; z-index: 2; display: grid; grid-template-columns: 1.25fr .75fr; gap: 5rem; align-items: center; padding: 8rem 0 5rem; }
-    .eyebrow { margin: 0 0 1.1rem; color: var(--teal-bright); font-size: .8rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
-    h1 { margin: 0; max-width: 760px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(3rem, 6vw, 5.8rem); font-weight: 600; line-height: .98; letter-spacing: -.035em; }
-    .hero-lead { max-width: 650px; margin: 1.7rem 0 0; color: #d8e5e9; font-size: clamp(1.1rem, 2vw, 1.3rem); line-height: 1.65; }
-    .actions { display: flex; flex-wrap: wrap; gap: .9rem; align-items: center; margin-top: 2rem; }
-    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: .8rem 1.3rem; border-radius: 8px; text-decoration: none; font-weight: 800; }
-    .button-primary { color: var(--navy-deep); background: var(--teal-bright); box-shadow: 0 10px 24px rgba(0, 201, 186, .2); }
-    .button-primary:hover { background: #24d8cc; transform: translateY(-1px); }
-    .button-secondary { color: white; border: 1px solid rgba(255,255,255,.4); }
-    .button-secondary:hover { border-color: white; background: rgba(255,255,255,.07); }
-    .microcopy { margin: .9rem 0 0; color: #abc0c8; font-size: .9rem; }
-    .route-panel { position: relative; padding: 1.25rem; border: 1px solid rgba(255,255,255,.16); border-radius: 18px; background: rgba(255,255,255,.065); backdrop-filter: blur(8px); }
-    .route-panel::before { content: ""; position: absolute; left: 38px; top: 58px; bottom: 58px; width: 2px; background: linear-gradient(var(--teal-bright), rgba(0,201,186,.15)); }
-    .route { position: relative; display: grid; grid-template-columns: 36px 1fr; gap: 1rem; padding: 1rem .6rem; }
-    .route-dot { position: relative; z-index: 2; width: 18px; height: 18px; margin: .15rem auto 0; border: 4px solid var(--navy); border-radius: 50%; background: var(--teal-bright); box-shadow: 0 0 0 2px rgba(0,201,186,.3); }
-    .route strong { display: block; color: white; font-size: 1rem; }
-    .route span { color: #b9ccd2; font-size: .88rem; }
-    .section { padding: 6.5rem 0; }
-    .section-soft { background: var(--paper); }
-    .section-dark { color: white; background: var(--navy); }
-    .section-head { max-width: 740px; margin-bottom: 3rem; }
-    h2 { margin: 0; color: var(--navy); font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.1rem, 4vw, 3.7rem); line-height: 1.08; letter-spacing: -.025em; }
-    .section-dark h2 { color: white; }
-    .section-head p { margin: 1rem 0 0; color: var(--muted); font-size: 1.1rem; }
-    .section-dark .section-head p { color: #b9ccd2; }
-    .audience-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
-    .audience-card { min-height: 260px; padding: 1.7rem; border: 1px solid var(--line); border-radius: 14px; background: white; box-shadow: 0 9px 28px rgba(16, 35, 55, .055); }
-    .card-number { display: inline-grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; color: var(--navy); background: var(--teal-soft); font-size: .85rem; font-weight: 900; }
-    h3 { margin: 1.4rem 0 .6rem; color: var(--navy); font-size: 1.25rem; line-height: 1.25; }
-    .audience-card p { margin: 0; color: var(--muted); }
-    .process { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; overflow: hidden; border: 1px solid rgba(255,255,255,.14); border-radius: 14px; background: rgba(255,255,255,.14); }
-    .process-step { min-height: 245px; padding: 1.7rem; background: var(--navy); }
-    .step-label { color: var(--teal-bright); font-size: .75rem; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
-    .process-step h3 { margin-top: 2.2rem; color: white; }
-    .process-step p { margin: 0; color: #b9ccd2; font-size: .95rem; }
-    .pilot-grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: 4.5rem; align-items: start; }
-    .pilot-note { padding: 2rem; border-left: 5px solid var(--teal); background: var(--teal-soft); }
-    .pilot-note strong { display: block; margin-bottom: .4rem; color: var(--navy); font-size: 1.1rem; }
-    .checklist { display: grid; gap: .85rem; margin: 0; padding: 0; list-style: none; }
-    .checklist li { position: relative; padding: 1rem 1rem 1rem 3.2rem; border: 1px solid var(--line); border-radius: 10px; background: white; }
-    .checklist li::before { content: "✓"; position: absolute; left: 1.1rem; top: 1rem; display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; color: white; background: var(--teal); font-weight: 900; }
-    .checklist strong { display: block; color: var(--navy); }
-    .checklist span { color: var(--muted); font-size: .93rem; }
-    .principle { max-width: 900px; margin: 0 auto; text-align: center; }
-    .principle blockquote { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.2; letter-spacing: -.02em; }
-    .principle p { max-width: 670px; margin: 1.5rem auto 0; color: #b9ccd2; }
-    .faq { display: grid; gap: .75rem; max-width: 850px; }
-    details { padding: 1.15rem 1.25rem; border: 1px solid var(--line); border-radius: 10px; background: white; }
-    summary { color: var(--navy); cursor: pointer; font-weight: 800; }
-    details p { margin: .8rem 0 0; color: var(--muted); }
-    .final-cta { padding: 5rem 0; color: white; background: var(--teal); }
-    .final-grid { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
-    .final-grid h2 { max-width: 680px; color: white; }
-    .final-cta .button { color: var(--navy); background: white; white-space: nowrap; }
-    footer { padding: 2rem 0; background: var(--navy-deep); color: #a9bec6; font-size: .9rem; }
-    .footer-grid { display: flex; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
-    footer a { color: white; }
-    @media (max-width: 860px) {
-      .hero { min-height: auto; }
-      .hero-grid, .pilot-grid { grid-template-columns: 1fr; gap: 3rem; }
-      .hero-grid { padding-top: 8.2rem; }
-      .route-panel { max-width: 600px; }
-      .audience-grid { grid-template-columns: 1fr; }
-      .audience-card { min-height: 0; }
-      .process { grid-template-columns: 1fr 1fr; }
-      .final-grid { align-items: flex-start; flex-direction: column; }
-    }
-    @media (max-width: 560px) {
-      .wrap { width: min(100% - 28px, 1120px); }
-      .logo { width: 205px; }
-      .nav-link { display: none; }
-      .hero-grid { padding-bottom: 4rem; }
-      h1 { font-size: clamp(2.8rem, 14vw, 4.1rem); }
-      .section { padding: 4.5rem 0; }
-      .process { grid-template-columns: 1fr; }
-      .process-step { min-height: 0; }
-    }
-    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .button-primary:hover { transform: none; } }
+    :root{--navy:#102337;--deep:#081725;--teal:#007d75;--bright:#31d7c5;--mint:#e8f7f3;--paper:#f4f7f6;--white:#fff;--ink:#172d3b;--muted:#526575;--line:#d5e1df;--dark-line:#355263;--radius:18px;--shadow:0 16px 55px #08172515}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--white);color:var(--ink);font-family:Inter,Aptos,"Segoe UI",Arial,sans-serif;font-size:16px;line-height:1.65;-webkit-text-size-adjust:100%}button,input,select,textarea{font:inherit}a{color:var(--teal);text-underline-offset:4px}button,a,select,summary{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:default}p{margin:0 0 1rem}h1,h2,h3{color:var(--navy);line-height:1.15;margin:0}h1,h2{font-family:Georgia,"Times New Roman",serif;letter-spacing:-.035em;font-weight:500}h1{font-size:clamp(2.8rem,4.7vw,4.5rem);max-width:13ch}h2{font-size:clamp(2rem,3.1vw,3rem);max-width:24ch}h3{font-size:1.15rem;letter-spacing:-.015em}button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,textarea:focus-visible{outline:3px solid #b34800;outline-offset:5px}.dark a:focus-visible,.dark button:focus-visible{outline-color:#ffd89c}.wrap{width:min(1200px,calc(100% - 64px));margin-inline:auto}.muted{color:var(--muted)}.small{font-size:.875rem}.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.75rem;font-weight:800;color:var(--teal);margin-bottom:1rem}.dark{color:#e0ecee;background:var(--navy)}.dark h1,.dark h2,.dark h3{color:white}.dark .eyebrow{color:var(--bright)}.skip-link{position:absolute;z-index:50;top:8px;left:12px;transform:translateY(-200%);background:#fff;padding:12px 20px;color:var(--navy);border:2px solid var(--navy)}.skip-link:focus{transform:none}.button{display:inline-flex;justify-content:center;align-items:center;gap:.6rem;min-height:50px;padding:12px 21px;border:1px solid transparent;border-radius:9px;text-align:center;text-decoration:none;font-weight:750;font-size:.95rem;line-height:1.4}.primary{background:var(--bright);color:var(--deep)}.primary:hover{background:#67e7d9}.secondary{background:white;border-color:var(--line);color:var(--navy)}.secondary:hover{background:var(--paper);border-color:#6a918f}.dark .secondary{color:white;background:transparent;border-color:#6a8793}.dark .secondary:hover{background:#ffffff0a;border-color:white}.arrow{font-size:1.2em;font-family:Arial,sans-serif;font-weight:400}.actions{display:flex;flex-wrap:wrap;gap:12px}.site-header{padding:24px 0 0;background:var(--deep);color:white}.header-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{min-height:50px;display:inline-flex;align-items:center}.logo{width:240px;height:auto;display:block}.header-nav{display:flex;align-items:center;gap:22px}.header-nav a:not(.button){min-height:48px;display:inline-flex;align-items:center;color:#e5edef;text-decoration:none;font-weight:650;font-size:.9rem}.header-nav a:not(.button):hover{text-decoration:underline}.header-cta{border:1px solid #587681;background:transparent;color:white}.header-cta:hover{background:#ffffff0d}.hero{position:relative;background:linear-gradient(125deg,var(--deep),var(--navy) 75%);padding:70px 0 58px;overflow:hidden}.hero::after{content:"";position:absolute;inset:auto -150px -330px auto;width:650px;height:650px;border:1px solid #355b61;border-radius:50%;pointer-events:none;opacity:.5}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:64px;align-items:center}.hero .lead{font-size:1.12rem;line-height:1.7;max-width:49ch;margin:24px 0;color:#cedee4}.hero .micro{color:#bacfd7;font-size:.875rem;margin:16px 0 0}.pilot-badge{display:inline-flex;align-items:center;gap:9px;color:#c1e9e3;border:1px solid #365a64;background:#ffffff04;border-radius:99px;padding:7px 12px;font-size:.78rem;font-weight:700;margin-bottom:23px}.pilot-badge::before{content:"";width:7px;height:7px;background:var(--bright);border-radius:50%}.product-preview{color:var(--ink);background:#fff;border-radius:var(--radius);box-shadow:0 30px 70px #0003;margin:0;overflow:hidden;border:1px solid #49646b}.preview-top{padding:15px 24px;display:flex;justify-content:space-between;align-items:center;background:#f4f8f7;border-bottom:1px solid var(--line);gap:10px;font-size:.75rem;color:var(--muted);font-weight:700}.preview-top span:first-child{color:var(--teal)}.preview-content{padding:28px}.preview-content .eyebrow{color:var(--teal);margin-bottom:10px}.preview-content h2{font-family:Inter,Aptos,"Segoe UI",sans-serif;font-size:1.25rem;font-weight:750;letter-spacing:-.025em;line-height:1.35}.before{margin:20px 0;padding-left:15px;border-left:3px solid #d1dedb}.before p{margin-bottom:4px;font-size:1.08rem;color:var(--ink)}.before span{color:var(--muted);font-size:.78rem}.evidence-block{background:var(--mint);border:1px solid #c3e3da;border-radius:12px;padding:18px}.evidence-block strong{font-size:.7rem;color:#32665f;text-transform:uppercase;letter-spacing:.1em;display:block;margin-bottom:8px}.evidence-block p{font-size:.95rem;margin:0;color:var(--ink)}.skill-tags{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 22px}.skill-tags span{border:1px solid #cadbd6;border-radius:99px;background:#fff;padding:4px 10px;font-size:.73rem;color:#355e59}.preview-foot{padding-top:16px;border-top:1px solid var(--line);font-size:.78rem;color:var(--muted)}.preview-caption{padding:0 28px 22px;color:var(--muted);font-size:.75rem}.hero-bottom{position:relative;z-index:1;display:flex;gap:24px;flex-wrap:wrap;color:#c0d3da;border-top:1px solid #304755;margin-top:45px;padding-top:21px;font-size:.82rem}.hero-bottom span::before{content:"✓";color:var(--bright);padding-right:8px}.section{padding:84px 0}.soft{background:var(--paper)}.section-intro{max-width:710px;margin-bottom:34px}.section-intro>p:last-child{margin-top:18px;color:var(--muted);max-width:65ch}.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}.promise{padding:28px;border-left:4px solid var(--teal);background:var(--mint);margin-top:30px;border-radius:0 12px 12px 0}.promise h3{margin-bottom:10px}.promise p{font-size:.94rem;color:#375753;margin:0}.audience-list{margin:0;padding:0;list-style:none}.audience-list li{display:grid;grid-template-columns:44px 1fr;gap:18px;padding:25px 0;border-bottom:1px solid var(--line)}.audience-list li:first-child{padding-top:0}.audience-list li:last-child{border-bottom:0;padding-bottom:0}.number{display:grid;place-items:center;background:var(--mint);color:var(--teal);width:40px;height:40px;border-radius:50%;font-size:.82rem;font-weight:800}.audience-list h3{margin:0 0 8px}.audience-list p{margin:0;color:var(--muted);font-size:.94rem}.sample-head{display:flex;align-items:end;justify-content:space-between;gap:28px}.sample-head .section-intro{margin-bottom:0}.sample-note{max-width:250px;font-size:.8rem;color:var(--muted);border-left:2px solid #a5c6bf;padding-left:16px}.example-controls{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:30px 0 20px;padding:24px;border:1px solid var(--line);border-radius:14px;background:#fff}.field-label{display:block;font-size:.85rem;font-weight:750;margin-bottom:8px;color:var(--navy)}select{min-height:50px;padding:11px 42px 11px 13px;border-radius:8px;border:1px solid #839f9d;color:var(--ink);background:#fff;width:100%;max-width:100%}.sample-grid{display:grid;grid-template-columns:1fr 1.12fr;gap:20px}.evidence-sheet,.output-sheet{border:1px solid var(--line);border-radius:14px;padding:28px;background:white}.sheet-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:18px;border-bottom:1px solid var(--line);margin-bottom:20px}.sheet-top h3{font-size:1rem}.sheet-top span{font-size:.72rem;color:var(--muted)}.evidence-lines{margin:0;display:grid;gap:16px}.evidence-lines dt{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.075em;color:var(--teal);margin-bottom:3px}.evidence-lines dd{margin:0;font-size:.93rem;line-height:1.6}.output-sheet{background:var(--navy);color:#d8e7eb;border-color:var(--navy);display:flex;flex-direction:column;align-items:start}.output-sheet .sheet-top{border-color:var(--dark-line);width:100%;margin-bottom:22px}.output-sheet h3{color:#fff}.output-sheet .sheet-top span{color:#b3cbd4}.output-sheet .context-label{font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:var(--bright);font-weight:750}.output-sheet blockquote{margin:10px 0 20px;font-family:Georgia,"Times New Roman",serif;font-size:1.25rem;line-height:1.6;color:white}.output-sheet .button{margin-top:auto}.output-guide{font-size:.85rem;color:#bfd1d9;line-height:1.6}.sample-disclaimer{font-size:.81rem;color:var(--muted);margin:20px 0 0;max-width:90ch}.status{display:block;min-height:1.5em;margin-top:10px;font-size:.82rem;color:var(--teal)}.output-sheet .status{color:#b1e7dd}.journey{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}.journey li{background:#fff;padding:25px}.journey span{display:block;color:var(--teal);font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;font-weight:800;margin-bottom:12px}.journey h3{margin-bottom:10px}.journey p{color:var(--muted);font-size:.9rem;line-height:1.6;margin:0}.journey-note{font-size:.85rem;color:var(--muted);margin-top:20px;max-width:85ch}.pilot-section{background:var(--navy);color:#d1e1e6}.pilot-section h2,.pilot-section h3{color:white}.pilot-section .eyebrow{color:var(--bright)}.pilot-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px}.pilot-grid .intro{max-width:45ch;margin-top:22px}.pilot-grid .cost-note{color:#b7cfd5;font-size:.83rem;margin-top:25px}.pilot-steps{list-style:none;margin:0;padding:0;display:grid;gap:24px}.pilot-steps li{display:grid;grid-template-columns:40px 1fr;gap:18px}.pilot-steps .number{background:#1e4550;color:var(--bright)}.pilot-steps h3{font-size:1rem;margin-bottom:7px}.pilot-steps p{font-size:.92rem;color:#c3d8e0;margin:0}.pilot-tag{color:var(--bright);font-size:.78rem;font-weight:700;display:block;margin-bottom:5px}.facts{margin:35px 0 0;padding-top:24px;border-top:1px solid #42606c;display:flex;flex-wrap:wrap;gap:14px 30px;font-size:.8rem;color:#c7dbe1}.faq-grid{display:grid;grid-template-columns:.65fr 1.35fr;gap:70px}.faq-intro p{margin:20px 0 0;color:var(--muted);font-size:.95rem}.faq{display:grid;gap:10px}details{border-bottom:1px solid var(--line);padding-bottom:10px}summary{min-height:50px;display:list-item;padding:12px 34px 12px 0;position:relative;cursor:pointer;color:var(--navy);font-size:.95rem;font-weight:750;line-height:1.6;list-style:none}summary::-webkit-details-marker{display:none}summary::after{content:"+";position:absolute;right:4px;top:9px;font-size:1.4rem;font-weight:400;color:var(--teal)}details[open] summary::after{content:"−"}details p{font-size:.91rem;color:var(--muted);margin:8px 28px 15px 0}.join-card{border:1px solid #bfd6cf;border-radius:22px;background:var(--mint);padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:60px}.join-card .intro{font-size:.98rem;color:#3d5c56;margin:20px 0 0;max-width:44ch}.contact-box{background:#fff;padding:26px;border:1px solid #c7ded7;border-radius:14px}.contact-box h3{font-size:1rem;margin:0 0 14px}.email-address{overflow-wrap:anywhere;display:block;color:var(--navy);font-size:1.15rem;font-weight:750;margin-bottom:18px}.contact-actions{display:flex;flex-wrap:wrap;gap:10px}.contact-actions .button{padding-inline:14px;font-size:.85rem}.manual-copy-label{display:block;font-size:.82rem;font-weight:750;margin-top:14px}.manual-copy{display:block;margin-top:8px;width:100%;min-height:86px;padding:12px;border:1px solid #839f9d;border-radius:8px;resize:vertical;color:var(--ink);background:white}.contact-instructions{font-size:.83rem;color:var(--muted);margin:18px 0 0}.join-privacy{grid-column:1/-1;font-size:.8rem;color:#375d55;border-top:1px solid #bed9ce;padding-top:20px;margin:-25px 0 0}.site-footer{padding:28px 0;background:var(--deep);color:#b9ced6;font-size:.8rem}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.site-footer a{min-height:48px;color:#e5f2f4;display:inline-flex;align-items:center}.site-footer .footer-note{max-width:70ch;margin:14px 0 0;font-size:.75rem;color:#9db7c1}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}[hidden]{display:none!important}
+    .hero{background-color:var(--navy)}.preview-content h2{color:var(--navy)}
+    /* Progressive enhancement: without JS, retain examples and email but hide inert controls. */
+    .example-controls,#copy-example,#copy-email{display:none}
+    .js .example-controls{display:grid}.js #copy-example,.js #copy-email{display:inline-flex}
+    .site-header a:focus-visible,.site-footer a:focus-visible,.output-sheet button:focus-visible,.output-sheet textarea:focus-visible{outline-color:#ffd89c}
+    .format-list{border-top:1px solid var(--line)}
+    .format-row{display:grid;grid-template-columns:.8fr 1.3fr .65fr;gap:28px;align-items:start;border-bottom:1px solid var(--line);padding:26px 0}
+    .format-row h3{font-size:1.05rem;margin-bottom:6px}.format-row p{font-size:.92rem;color:var(--muted);margin:0}
+    .format-state{color:var(--teal);font-size:.78rem;font-weight:750;display:inline-block;border-left:3px solid #9ec8bd;padding-left:12px;line-height:1.6}
+    .formats-note{margin-top:22px;font-size:.87rem;max-width:85ch;color:var(--muted)}
+    .pilot-status{padding:17px 19px;margin-top:24px;border-left:3px solid var(--bright);background:#ffffff08;color:#e0ecee;font-size:.9rem}
+    .pilot-status strong{display:block;color:white;margin-bottom:5px}.pilot-status p{margin:0}
+    @media(max-width:760px){.format-row{grid-template-columns:1fr;gap:12px;padding:24px 0}.format-state{justify-self:start}.header-nav .header-cta{min-height:48px}}
+    @media(max-width:400px){.logo{width:160px}.header-cta{font-size:.75rem;gap:7px}}
+    @media(min-width:1600px){.hero{padding-top:82px;padding-bottom:65px}.hero-grid{gap:85px}.hero h1{font-size:4.7rem}.wrap{width:min(1240px,calc(100% - 96px))}}
+    @media(max-width:1000px){.header-nav{gap:14px}.hero-grid{gap:35px}.split,.pilot-grid,.faq-grid{gap:40px}.join-card{gap:35px;padding:32px}.preview-content{padding:22px}.preview-caption{padding-inline:22px}.hero{padding-top:55px}h1{font-size:3.25rem}.hero .lead{font-size:1rem}.hero .actions{flex-direction:column;align-items:start}.hero .actions a{width:100%;max-width:320px}.journey li{padding:22px}.sample-grid{grid-template-columns:1fr 1fr}.sample-head{align-items:start}.sample-note{max-width:220px}}
+    @media(max-width:760px){.wrap{width:calc(100% - 40px)}.header-inner{gap:12px}.logo{width:205px}.header-nav>a:not(.header-cta){display:none}.header-cta{font-size:.82rem;padding:10px 14px}.hero-grid{grid-template-columns:1fr;gap:35px}.hero{padding:45px 0 32px}.hero h1{font-size:clamp(2.9rem,8vw,4rem);max-width:15ch}.hero .lead{max-width:58ch}.hero .actions{flex-direction:row;align-items:center}.hero .actions a{width:auto;max-width:none}.product-preview{max-width:590px;width:100%}.preview-content{padding:24px}.preview-caption{padding-inline:24px}.hero-bottom{gap:10px 20px;margin-top:30px}.section{padding:58px 0}.split,.pilot-grid,.faq-grid,.join-card{grid-template-columns:1fr;gap:35px}.promise{margin-top:24px}.audience-list li{padding:20px 0}.sample-head{display:block}.sample-note{max-width:none;margin-top:20px}.sample-grid{grid-template-columns:1fr}.example-controls{grid-template-columns:1fr;gap:18px;padding:20px}.output-sheet blockquote{font-size:1.2rem}.output-sheet .button{margin-top:15px}.journey{grid-template-columns:1fr 1fr}.pilot-grid .intro{max-width:65ch}.facts{gap:10px 20px}.faq-intro p{max-width:60ch}.join-card{padding:28px;gap:26px}.join-privacy{grid-column:auto;margin:0}.contact-box{padding:22px}}
+    @media(max-width:400px){.wrap{width:calc(100% - 32px)}.logo{width:174px}.header-cta{font-size:.77rem;padding:10px 11px}.site-header{padding-top:16px}.hero{padding-top:34px}.hero h1{font-size:2.75rem;max-width:12ch}.pilot-badge{font-size:.7rem;padding:6px 9px}.hero .actions{display:grid;grid-template-columns:1fr;width:100%}.hero .actions a{width:100%}.hero .lead{margin:20px 0}.preview-content{padding:20px}.preview-top{padding:13px 20px;font-size:.68rem}.preview-caption{padding-inline:20px}.preview-content h2{font-size:1.12rem}.hero-bottom{display:grid;gap:9px;font-size:.78rem}.journey{grid-template-columns:1fr}.sample-grid>article{padding:22px}.sample-head h2{font-size:2rem}.join-card{padding:23px 19px}.contact-box{padding:19px 15px}.contact-actions{display:grid;grid-template-columns:1fr}.email-address{font-size:1.05rem}.sheet-top{align-items:start}.sheet-top span{max-width:90px;text-align:right}.button{font-size:.9rem}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    @media print{.site-header,.skip-link,.actions,.header-nav,.example-controls,.contact-actions,.status,.site-footer{display:none}.section,.hero{padding:24px 0}.wrap{width:100%}.hero-grid,.split,.sample-grid,.pilot-grid,.faq-grid,.join-card{display:block}.product-preview{margin-top:20px}.dark,.hero,.pilot-section,.output-sheet{background:#fff;color:#172d3b}.dark h1,.dark h2,.dark h3,.pilot-section h2,.pilot-section h3,.output-sheet h3,.output-sheet blockquote{color:#102337}.sample-note,.output-guide,.pilot-grid .cost-note,.pilot-steps p{color:#526575}.join-card{padding:20px}details{break-inside:avoid}.evidence-sheet,.output-sheet,.contact-box{break-inside:avoid}}
   </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site-header">
-    <div class="wrap nav">
-      <a href="#top" aria-label="CareerMile home">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="CareerMile home">
         <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 144" role="img" aria-labelledby="logo-title logo-desc">
           <title id="logo-title">CareerMile</title><desc id="logo-desc">The Career Progression System</desc>
           <g transform="translate(8 8)"><rect width="128" height="128" rx="28" fill="#00B4A6"/><path d="M91 31C80 20 63 16 48 21C30 27 19 43 19 62C19 83 34 101 54 106C69 109 84 104 94 94" fill="none" stroke="#102337" stroke-width="9" stroke-linecap="round"/><path d="M38 85L55 59L70 77L94 41" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="38" cy="85" r="5.5" fill="#102337" stroke="#00B4A6" stroke-width="2"/><circle cx="55" cy="59" r="5.5" fill="#102337" stroke="#00B4A6" stroke-width="2"/><circle cx="70" cy="77" r="5.5" fill="#102337" stroke="#00B4A6" stroke-width="2"/><path d="M84 40L98 37L96 51" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
           <text x="166" y="73" fill="#FFFFFF" font-family="Aptos,Segoe UI,Arial,sans-serif" font-size="52" font-weight="800" letter-spacing="1.5">CAREER<tspan fill="#00D2C2">MILE</tspan></text><text x="169" y="104" fill="#D8E5E8" font-family="Aptos,Segoe UI,Arial,sans-serif" font-size="18" font-weight="600" letter-spacing="2.6">THE CAREER PROGRESSION SYSTEM</text>
         </svg>
       </a>
-      <a class="nav-link" href="mailto:hello@careermile.co.uk">hello@careermile.co.uk</a>
+      <nav class="header-nav" aria-label="Main navigation"><a href="#sample">See an example</a><a href="#formats">The toolkit</a><a href="#pilot">About the pilot</a><a class="button header-cta" href="#join">Pilot enquiry <span aria-hidden="true">↗</span></a></nav>
     </div>
   </header>
-
-  <main id="main">
-    <section class="hero" id="top">
+  <main id="main" tabindex="-1">
+    <section class="hero dark" id="top" aria-labelledby="hero-title">
       <div class="wrap hero-grid">
         <div>
-          <p class="eyebrow">Applications open · Free seven-day pilot</p>
-          <h1>Know your next career step.</h1>
-          <p class="hero-lead">CareerMile helps you understand where you are, recognise the evidence you already have and take a practical next step—whether you are starting work, changing direction or ready to progress.</p>
-          <div class="actions">
-            <a class="button button-primary" href="mailto:hello@careermile.co.uk?subject=CareerMile%20pilot%20application&amp;body=Hello%20CareerMile%2C%0A%0AI%27d%20like%20to%20take%20part%20in%20the%20seven-day%20pilot.%0A%0AMy%20current%20career%20situation%20is%3A%20%0A%0AWhat%20I%27d%20most%20like%20help%20with%3A%20%0A%0AThank%20you.">Apply to test CareerMile</a>
-            <a class="button button-secondary" href="#how-it-works">How the pilot works</a>
+          <p class="pilot-badge">Early-stage project · Adult pilot enquiries</p>
+          <h1 id="hero-title">Your experience has a next chapter.</h1>
+          <p class="lead">Recognise what you can do. Turn it into evidence you can explain. Choose one practical next step—whether you’re starting out, changing direction or moving forward at work.</p>
+          <div class="actions"><a class="button primary" href="#sample">Explore a worked example <span class="arrow" aria-hidden="true">↓</span></a><a class="button secondary" href="#pilot">How the pilot works</a></div>
+          <p class="micro">No job or promotion promises. A structured way to do the thinking.</p>
+        </div>
+        <figure class="product-preview">
+          <div class="preview-top"><span>CAREERMILE / EVIDENCE BANK</span><span>Worked example</span></div>
+          <div class="preview-content">
+            <p class="eyebrow">Ordinary experience. Useful evidence.</p>
+            <h2>“I only help at a community café.”</h2>
+            <div class="before"><p>That can be a starting point—not the whole story.</p><span>Look for your contribution, not a more impressive job title.</span></div>
+            <div class="evidence-block"><strong>What I actually did</strong><p>I organised a clear handover list for the next volunteer, checked stock and flagged items that needed ordering.</p></div>
+            <div class="skill-tags" aria-label="Skills illustrated"><span>Organisation</span><span>Communication</span><span>Taking responsibility</span></div>
+            <div class="preview-foot">One evidence example → adapt for a CV, interview or development conversation.</div>
           </div>
-          <p class="microcopy">No payment required. We ask for honest feedback in return.</p>
-        </div>
-        <div class="route-panel" aria-label="The CareerMile journey">
-          <div class="route"><span class="route-dot" aria-hidden="true"></span><div><strong>Discover</strong><span>Understand your starting point</span></div></div>
-          <div class="route"><span class="route-dot" aria-hidden="true"></span><div><strong>Build</strong><span>Turn experience into useful evidence</span></div></div>
-          <div class="route"><span class="route-dot" aria-hidden="true"></span><div><strong>Target</strong><span>Choose opportunities that fit</span></div></div>
-          <div class="route"><span class="route-dot" aria-hidden="true"></span><div><strong>Act</strong><span>Take a focused next step</span></div></div>
-          <div class="route"><span class="route-dot" aria-hidden="true"></span><div><strong>Progress</strong><span>Keep growing after you get the job</span></div></div>
-        </div>
+          <figcaption class="preview-caption">Fictional illustration of the method—not a customer result or a screenshot of a completed tester’s work.</figcaption>
+        </figure>
       </div>
+      <div class="wrap hero-bottom"><span>Work, study, caring and volunteering count</span><span>Phone and laptop browser pilot</span><span>Suggested first session: 20–30 minutes</span></div>
     </section>
 
-    <section class="section section-soft">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow">Built for real career journeys</p>
-          <h2>You do not need years of experience to have something valuable to build on.</h2>
-          <p>CareerMile starts with your situation rather than assuming everyone has the same goal, confidence or work history.</p>
-        </div>
-        <div class="audience-grid">
-          <article class="audience-card"><span class="card-number">01</span><h3>Starting out</h3><p>Recognise useful skills from education, caring, volunteering, projects, hobbies and everyday responsibilities—and learn how to explain them.</p></article>
-          <article class="audience-card"><span class="card-number">02</span><h3>Changing direction</h3><p>Work out what should come with you, what needs to change and which opportunities deserve your time.</p></article>
-          <article class="audience-card"><span class="card-number">03</span><h3>Moving forward</h3><p>Capture evidence, build confidence, prepare for greater responsibility and make progression conversations more useful.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark" id="how-it-works">
-      <div class="wrap">
-        <div class="section-head"><p class="eyebrow">The pilot</p><h2>A short test with a useful outcome.</h2><p>This is not an exam. We are testing CareerMile—not testing you.</p></div>
-        <div class="process">
-          <article class="process-step"><span class="step-label">Step 1</span><h3>Tell us where you are</h3><p>A brief introduction helps us provide the most relevant version.</p></article>
-          <article class="process-step"><span class="step-label">Step 2</span><h3>Use CareerMile</h3><p>Complete the starting assessment and one route relevant to you.</p></article>
-          <article class="process-step"><span class="step-label">Step 3</span><h3>Try it for seven days</h3><p>Return when useful and notice what helps, confuses or feels unnecessary.</p></article>
-          <article class="process-step"><span class="step-label">Step 4</span><h3>Be honest with us</h3><p>Share what worked and what should change. Polite praise is less useful than the truth.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap pilot-grid">
+    <section class="section" aria-labelledby="audience-title">
+      <div class="wrap split">
         <div>
-          <p class="eyebrow">What you receive</p>
-          <h2>Guidance you can use—not another pile of generic advice.</h2>
-          <div class="pilot-note"><strong>The first pilot is free.</strong>You receive access to the guided CareerMile experience and the finished digital workbook in return for completing the test and providing feedback.</div>
+          <p class="eyebrow">Start with what you have</p><h2 id="audience-title">You don’t need a perfect career story.</h2>
+          <div class="promise"><h3>The idea behind CareerMile</h3><p>Your potential isn’t defined solely by qualifications or a job title. We want career development to feel approachable, practical and rooted in your real experience—not someone else’s ideal route.</p></div>
         </div>
-        <ul class="checklist">
-          <li><strong>A clear starting point</strong><span>See what deserves attention now rather than trying to fix everything.</span></li>
-          <li><strong>A guided route</strong><span>Prompts explain why each task matters and what a useful answer could contain.</span></li>
-          <li><strong>Reusable career evidence</strong><span>Capture examples you can return to for applications, interviews and reviews.</span></li>
-          <li><strong>Support beyond getting hired</strong><span>Plan your first 90 days, development, promotion or next change.</span></li>
+        <ul class="audience-list">
+          <li><span class="number" aria-hidden="true">01</span><div><h3>Starting out or returning</h3><p>Find examples from education, caring, volunteering, projects and everyday responsibilities. A break from paid work doesn’t erase your skills.</p></div></li>
+          <li><span class="number" aria-hidden="true">02</span><div><h3>Changing direction</h3><p>Identify what you want to keep, what needs to change and which role requirements you can already support with evidence.</p></div></li>
+          <li><span class="number" aria-hidden="true">03</span><div><h3>Developing in work</h3><p>Capture your contribution, prepare for useful development conversations and choose a concrete action to practise or learn.</p></div></li>
         </ul>
       </div>
     </section>
 
-    <section class="section section-dark">
-      <div class="wrap principle">
-        <p class="eyebrow">The CareerMile principle</p>
-        <blockquote>Progress does not require having your whole career figured out. It begins with one useful next step.</blockquote>
-        <p>CareerMile will not promise a job or promotion. It is designed to help you make clearer decisions, communicate your value and take action with better evidence.</p>
-      </div>
-    </section>
-
-    <section class="section section-soft">
+    <section class="section soft" id="sample" aria-labelledby="sample-title">
       <div class="wrap">
-        <div class="section-head"><p class="eyebrow">Questions</p><h2>Before you apply</h2></div>
-        <div class="faq">
-          <details><summary>Who can take part?</summary><p>We are looking for adults seeking a first job, returning to work, changing careers, developing in a current role or considering promotion.</p></details>
-          <details><summary>How much time will it take?</summary><p>Allow around 20–30 minutes for the first session, then use it naturally during the following seven days. The final feedback should take approximately ten minutes.</p></details>
-          <details><summary>Do I need to share private career information?</summary><p>No. Use general or anonymised examples wherever you prefer. Do not enter information that you would be uncomfortable storing on your own device.</p></details>
-          <details><summary>Is CareerMile already a finished app?</summary><p>No. This pilot uses an interactive prototype and digital workbook. Your feedback will help determine what should become part of the future subscription service.</p></details>
-          <details><summary>What happens to my email address?</summary><p>We use it to administer the pilot and respond to you. We will not add you to marketing emails unless you separately choose to receive them.</p></details>
+        <div class="sample-head"><div class="section-intro"><p class="eyebrow">Try the approach</p><h2 id="sample-title">See an experience become usable evidence.</h2><p>Choose a fictional situation and see how the same fictional facts can support a different career task.</p></div><p class="sample-note">No account, personal answers or connected AI. These are fixed, illustrative examples—not an assessment of you.</p></div>
+        <div class="example-controls">
+          <div><label class="field-label" for="experience">1. Pick an experience</label><select id="experience"><option value="volunteer">Volunteering in a community café</option><option value="returning">Organising shared caring responsibilities</option><option value="working">Improving a team’s handover at work</option></select></div>
+          <div><label class="field-label" for="context">2. Choose a use</label><select id="context"><option value="cv">A CV or application example</option><option value="interview">An interview answer</option><option value="development">A development conversation</option></select></div>
         </div>
+        <div class="sample-grid">
+          <article class="evidence-sheet" aria-labelledby="evidence-title"><div class="sheet-top"><h3 id="evidence-title">Start with the facts</h3><span>Fictional Evidence Bank entry</span></div><dl class="evidence-lines"><div><dt>Situation</dt><dd id="example-situation">I volunteered at a community café where different people covered each shift.</dd></div><div><dt>My contribution</dt><dd id="example-contribution">I created a short handover list, checked stock and flagged items that needed ordering.</dd></div><div><dt>What happened</dt><dd id="example-outcome">The next volunteer could see outstanding tasks without asking the previous shift.</dd></div><div><dt>Skills this may demonstrate</dt><dd id="example-skills">Organisation, clear communication and taking responsibility.</dd></div></dl></article>
+          <article class="output-sheet" aria-labelledby="output-title"><div class="sheet-top"><h3 id="output-title">Make the evidence useful</h3><span id="output-format">CV / application</span></div><span class="context-label" id="output-label">A concise evidence statement</span><blockquote id="example-output">Created a clear handover checklist while volunteering at a community café, helping the next shift identify outstanding tasks and stock needs.</blockquote><p class="output-guide" id="output-guide">Adapt the emphasis to the role’s requirements. Only claim skills and outcomes that your own experience supports.</p><button class="button primary" type="button" id="copy-example">Copy this fictional example</button><span class="status" id="copy-example-status" role="status" aria-live="polite"></span><label class="manual-copy-label" for="example-manual" id="example-manual-label" hidden>Copy manually from this box</label><textarea class="manual-copy" id="example-manual" readonly hidden></textarea></article>
+        </div>
+        <p class="sample-disclaimer">The words change; the underlying facts do not. Don’t invent a metric, result or responsibility to make an answer sound stronger. In your own Evidence Bank, note what you can verify and what you want to improve.</p>
+        <span class="sr-only" role="status" aria-live="polite" id="example-change-status"></span>
+        <noscript><p class="promise">The volunteering example above is available without JavaScript. Example switching and copy buttons need JavaScript; you can still select and copy the displayed text manually.</p></noscript>
       </div>
     </section>
 
-    <section class="final-cta">
-      <div class="wrap final-grid">
-        <h2>Help shape a career system built around real people and real progress.</h2>
-        <a class="button" href="mailto:hello@careermile.co.uk?subject=CareerMile%20pilot%20application&amp;body=Hello%20CareerMile%2C%0A%0AI%27d%20like%20to%20take%20part%20in%20the%20seven-day%20pilot.%0A%0AMy%20current%20career%20situation%20is%3A%20%0A%0AWhat%20I%27d%20most%20like%20help%20with%3A%20%0A%0AThank%20you.">Apply for the pilot</a>
+    <section class="section" aria-labelledby="journey-title">
+      <div class="wrap">
+        <div class="section-intro"><p class="eyebrow">One connected journey</p><h2 id="journey-title">Start where it helps. Return when things change.</h2><p>The pilot connects reflection, reusable evidence and action. You don’t need to complete six stages before anything becomes useful.</p></div>
+        <ol class="journey"><li><span>01 / Discover</span><h3>Find your starting point</h3><p>Reflect on strengths, priorities and the question you want to answer now.</p></li><li><span>02 / Build</span><h3>Capture useful evidence</h3><p>Describe what you actually did and what happened. Reuse—not reinvent—your examples.</p></li><li><span>03 / Target</span><h3>Compare your options</h3><p>Look at role requirements, practical constraints and gaps you can explore.</p></li><li><span>04 / Act</span><h3>Take a focused step</h3><p>Prepare an application or plan an action with a clear next step and review date.</p></li><li><span>05 / Interview</span><h3>Practise explaining it</h3><p>Use your evidence to structure answers, then reflect on what needs practice.</p></li><li><span>06 / Progress</span><h3>Keep a useful record</h3><p>Capture learning and achievements for a new role, review or future change.</p></li></ol>
+        <p class="journey-note">CareerMile is an early-stage browser prototype and workbook, not a recruitment service or validated psychometric test. The prototype’s prompt library does not perform connected AI analysis.</p>
+      </div>
+    </section>
+
+    <section class="section soft" id="formats" aria-labelledby="formats-title">
+      <div class="wrap">
+        <div class="section-intro"><p class="eyebrow">What is being built</p><h2 id="formats-title">One method. Different ways to work.</h2><p>A guided app, a browser workbook and print review copies share the same six-stage approach. They serve different purposes—and their readiness is different.</p></div>
+        <div class="format-list">
+          <article class="format-row"><div><h3>The guided app</h3><p>For a practical task</p></div><p>Capture an experience, build an Evidence Bank and use it in a CV text starter, cover-letter draft or interview practice.</p><span class="format-state">Invitation-only<br>Owner testing</span></article>
+          <article class="format-row"><div><h3>The browser workbook</h3><p>For deeper reflection</p></div><p>Search guided sections and work through editable exercises at your own pace. It is a separate tool within the protected pilot.</p><span class="format-state">Part of the pilot<br>Under review</span></article>
+          <article class="format-row"><div><h3>Printable &amp; paperback editions</h3><p>For working on paper</p></div><p>Review copies of the workbook for reading, writing and reflection away from a screen. Layout, colour and print checks are still being completed.</p><span class="format-state">Review copies<br>Not on sale here</span></article>
+        </div>
+        <p class="formats-note"><strong>A sign-in is not cloud saving.</strong> The app and browser workbook save answers in your current browser. They do not automatically sync between devices or transfer answers between formats. Encrypted backup tools are available in the pilot; keep the file and password safe, and check a restore before relying on a transfer.</p>
+      </div>
+    </section>
+
+    <section class="section pilot-section" id="pilot" aria-labelledby="pilot-title">
+      <div class="wrap">
+        <div class="pilot-grid"><div><p class="eyebrow">Free pilot · Adults 18+</p><h2 id="pilot-title">Help us test the usefulness—not just the look.</h2><p class="intro">We’re looking for honest feedback from people at different career stages. Tell us where you hesitate, what you can use and what you would change.</p><div class="pilot-status"><strong>Currently in owner testing.</strong><p>You can enquire about future availability. An enquiry does not create an account, confirm a place or start an automatic subscription.</p></div><p class="cost-note">CareerMile is being developed as a commercial product. The pilot is free, with no payment details or obligation to buy. Participation is not a promise of a future paid service.</p></div><ol class="pilot-steps"><li><span class="number" aria-hidden="true">1</span><div><span class="pilot-tag">A brief email</span><h3>Enquire about availability</h3><p>Tell us your general career situation and whether you’ll use a phone, laptop or both. We’ll reply about availability. If a place is offered, we’ll confirm access instructions separately.</p></div></li><li><span class="number" aria-hidden="true">2</span><div><span class="pilot-tag">Suggested first session: 20–30 minutes</span><h3>Try one useful task, if invited</h3><p>Complete a starting reflection, capture one evidence example and choose a next step. We’re testing CareerMile—not testing you.</p></div></li><li><span class="number" aria-hidden="true">3</span><div><span class="pilot-tag">Suggested exploration: seven days</span><h3>Return if it helps, then tell us honestly</h3><p>Explore other stages and the workbook at your own pace. Allow around ten minutes for feedback; you don’t need to complete everything.</p></div></li></ol></div>
+        <div class="facts"><span>Browser link, not an emailed ZIP</span><span>Phone and laptop layouts</span><span>Invited email addresses only · One-time sign-in code</span><span>Browser-local answers, no cross-device sync</span></div>
+      </div>
+    </section>
+
+    <section class="section soft" aria-labelledby="faq-title">
+      <div class="wrap faq-grid"><div class="faq-intro"><p class="eyebrow">Clear expectations</p><h2 id="faq-title">Before you join</h2><p>Useful tools should explain their limits as clearly as their features.</p></div><div class="faq">
+        <details><summary>Will it work on my phone?</summary><p>The browser pilot is designed for phones and laptops, with no ZIP extraction required. If invited, you sign in with a one-time code sent to your approved email address—no ChatGPT account is needed. Basic sign-in and saving after a page refresh have been tried on a phone and laptop; wider device and backup testing is still under way. A responsive layout is not a guarantee that every browser has been tested.</p></details>
+        <details><summary>Why might the pilot take a minute to open?</summary><p>The pilot currently uses free test hosting. After a quiet period, its server may need about a minute to wake up before the sign-in page appears. A hosting loading screen is not evidence that your browser-saved answers have been deleted. If the screen does not clear, or appears on every immediate refresh, tell us rather than repeatedly requesting sign-in codes. This test setup does not provide always-on service.</p></details>
+        <details><summary>Do my answers follow me between devices?</summary><p>Not in this prototype. Exercise answers save in the browser on the device you use; they do not automatically sync with another phone, laptop, browser or the separate workbook. Use the available export/backup controls and keep your own copy. Clearing browser storage or using private browsing may remove saved answers.</p></details>
+        <details><summary>Do I have to share my CV or personal history?</summary><p>No. Use fictional or anonymised examples if you prefer. Don’t include other people’s names, client/employer confidential material, health details or anything you wouldn’t want stored on your device. Feedback is separate from exercise answers; review what you send.</p></details>
+        <details><summary>Is the workbook the same as the app?</summary><p>They use the same six-stage method but are separate formats. The browser workbook has editable exercises; the printable PDF is for reading or printing, not a phone-first form. Printable and paperback review copies are still being checked and are not offered for sale here. Answers do not automatically transfer between the app and workbook.</p></details>
+        <details><summary>Will CareerMile tell me the right career or guarantee a job?</summary><p>No. It supports your reflection and decisions, not a prediction or professional assessment. It cannot guarantee employment, promotion or increased earnings. Consider qualified advice where a decision needs specialist support.</p></details>
+        <details><summary>What happens when I email you?</summary><p>Your enquiry reaches hello@careermile.co.uk. It is used to respond and, if you join, administer the pilot—not automatically add you to marketing. Please share only a general situation initially. You can ask about how your information is handled, or request deletion, by emailing the same address.</p></details>
+        <details><summary>Can an adviser or organisation introduce testers?</summary><p>Yes—please email to request an introduction you can review first. Ask interested adults to contact us directly rather than sending us their personal details. We are seeking feedback, not assuming your organisation endorses CareerMile.</p></details>
+      </div></div>
+    </section>
+
+    <section class="section" id="join" aria-labelledby="join-title">
+      <div class="wrap join-card">
+        <div><p class="eyebrow">One simple next step</p><h2 id="join-title">Enquire about the pilot.</h2><p class="intro">You don’t need a polished CV, the right job title or your whole future figured out. Enquiries are welcome while owner testing continues; invitations are arranged individually.</p></div>
+        <div class="contact-box"><h3>Email your pilot enquiry</h3><span class="email-address">hello@careermile.co.uk</span><div class="contact-actions"><a class="button primary" id="email-enquiry" href="mailto:hello@careermile.co.uk?subject=CareerMile%20pilot%20enquiry&amp;body=Hello%20Shaun%2C%0A%0AI%27m%20interested%20in%20the%20free%20CareerMile%20pilot.%0A%0AMy%20general%20career%20situation%20is%3A%20%0AThe%20device%20I%27ll%20use%20is%3A%20%0A%0APlease%20send%20me%20availability%20and%20access%20details.%0A%0AThank%20you.">Open an email draft <span aria-hidden="true">↗</span></a><button class="button secondary" type="button" id="copy-email">Copy email address</button></div><span class="status" id="copy-email-status" role="status" aria-live="polite"></span><label class="manual-copy-label" for="email-manual" id="email-manual-label" hidden>Copy the address manually</label><textarea class="manual-copy" id="email-manual" readonly hidden>hello@careermile.co.uk</textarea><p class="contact-instructions">If an email app doesn’t open, copy the address into your usual webmail. Subject: <strong>CareerMile pilot enquiry</strong>. Include your general career situation and device—no CV or sensitive details needed.</p></div>
+        <p class="join-privacy">No form is submitted by this page. Example selections aren’t saved and this page includes no analytics or marketing scripts. Website hosting may process normal request information. Emailing shares your message with CareerMile through your email provider; only send a general enquiry, not a CV or sensitive history. The protected pilot has separate sign-in and browser-storage arrangements.</p>
       </div>
     </section>
   </main>
-
-  <footer>
-    <div class="wrap footer-grid">
-      <span>© 2026 CareerMile · The Career Progression System</span>
-      <span>Questions? <a href="mailto:hello@careermile.co.uk">hello@careermile.co.uk</a></span>
-    </div>
-  </footer>
+  <footer class="site-footer"><div class="wrap"><div class="footer-inner"><span>CareerMile · Your career. Your pace. Your next step.</span><a href="#top">Back to top ↑</a></div><p class="footer-note">Independent career-development project. Early-stage pilot—not an established employment service. No endorsement or customer outcome is implied by the examples on this page.</p></div></footer>
+  <script>
+    'use strict';
+    (()=>{
+      // Enable only the interactions this script successfully installs.
+      const examples={
+        volunteer:{situation:'I volunteered at a community café where different people covered each shift.',contribution:'I created a short handover list, checked stock and flagged items that needed ordering.',outcome:'The next volunteer could see outstanding tasks without asking the previous shift.',skills:'Organisation, clear communication and taking responsibility.',cv:'Created a clear handover checklist while volunteering at a community café, helping the next shift identify outstanding tasks and stock needs.',interview:'At the community café, different volunteers covered each shift and tasks were sometimes hard to follow. I created a short checklist, checked stock and flagged outstanding items. The next volunteer could then see what needed attention without having to contact the previous shift. I learned the value of simple, clear handovers.',development:'I used a checklist to make the café handover clearer. I would like to practise adapting the same approach to a team setting. My next step is to review an example handover with a supervisor or adviser and ask what information is missing.'},
+        returning:{situation:'My family shared caring responsibilities, with appointments and daily tasks changing week to week.',contribution:'I kept a shared calendar, confirmed changes and made a simple list of who was doing each task.',outcome:'Everyone could check the current plan and see which tasks still needed an owner.',skills:'Planning, clear communication and coordinating responsibilities.',cv:'Coordinated changing appointments and shared responsibilities using a calendar and task list, keeping the current plan clear for everyone involved.',interview:'We had changing appointments and several people sharing responsibilities. I put the agreed tasks in a shared calendar, confirmed changes and checked that each task had an owner. This gave everyone a clear plan they could refer to. It helped me practise organising information and communicating changes carefully.',development:'Coordinating a changing weekly plan helped me practise organisation and communication. I would like to translate that experience into a workplace example. My next step is to compare a role’s planning requirements with this evidence and identify what further experience I need.'},
+        working:{situation:'Our team used several messages to hand over unfinished tasks at the end of a shift.',contribution:'I proposed a simple handover template, asked colleagues what they needed and trialled it on my shifts.',outcome:'Colleagues could find each task, its owner and its next action in one place.',skills:'Process improvement, collaboration and clear written communication.',cv:'Proposed and trialled a structured shift-handover template with colleagues, bringing outstanding tasks, owners and next actions into one place.',interview:'Our shift handovers were spread across several messages. I asked colleagues which information they needed, drafted a simple template and trialled it on my shifts. They could then find each outstanding task, its owner and next action in one place. Before claiming a wider improvement, I would gather feedback and check how consistently it was used.',development:'I trialled a handover template with my colleagues. The next step is to ask for feedback after two weeks and review whether it makes unfinished tasks clearer. I would like support to improve the template and agree what evidence would show whether it helps.'}
+      };
+      const formats={cv:{format:'CV / application',label:'A concise evidence statement',guide:'Adapt the emphasis to the role’s requirements. Only claim skills and outcomes that your own experience supports.'},interview:{format:'Interview practice',label:'A structured answer to practise',guide:'Use this as a structure, not a script to memorise. Be ready to explain your personal contribution and answer follow-up questions.'},development:{format:'Development conversation',label:'Evidence plus one next action',guide:'Ask for a specific kind of support, choose a review date and record what you learn. This is a proposed action—not proof of progress.'}};
+      const byId=id=>document.getElementById(id);
+      function updateExample(){const example=examples[byId('experience').value],format=formats[byId('context').value];for(const field of ['situation','contribution','outcome','skills'])byId('example-'+field).textContent=example[field];byId('example-output').textContent=example[byId('context').value];byId('output-format').textContent=format.format;byId('output-label').textContent=format.label;byId('output-guide').textContent=format.guide;byId('copy-example-status').textContent='';byId('example-manual').hidden=true;byId('example-manual-label').hidden=true;byId('example-change-status').textContent='Fictional example updated: '+byId('experience').selectedOptions[0].textContent+', '+format.format+'.';}
+      byId('experience').addEventListener('change',updateExample);byId('context').addEventListener('change',updateExample);
+      async function copyText(text,statusId,manualId,labelId){const status=byId(statusId),manual=byId(manualId);manual.value=text;try{if(!navigator.clipboard||!window.isSecureContext)throw new Error('Clipboard is unavailable');await navigator.clipboard.writeText(text);status.textContent='Copied. Paste it where you need it.';manual.hidden=true;byId(labelId).hidden=true;}catch(_error){status.textContent='Automatic copying isn’t available here. Select and copy the text below.';manual.hidden=false;byId(labelId).hidden=false;manual.focus();manual.select();}}
+      byId('copy-example').addEventListener('click',()=>copyText('CareerMile fictional example — not my own experience\n\n'+byId('example-output').textContent,'copy-example-status','example-manual','example-manual-label'));
+      byId('copy-email').addEventListener('click',()=>copyText('hello@careermile.co.uk','copy-email-status','email-manual','email-manual-label'));
+      document.documentElement.classList.add('js');
+    })();
+  </script>
 </body>
 </html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">CareerMile logo mark</title>
+  <desc id="desc">An open circular journey surrounding an upward route with milestone points.</desc>
+  <rect width="128" height="128" rx="28" fill="#102337"/>
+  <path d="M91 31C80 20 63 16 48 21C30 27 19 43 19 62C19 83 34 101 54 106C69 109 84 104 94 94"
+        fill="none" stroke="#00B4A6" stroke-width="9" stroke-linecap="round"/>
+  <path d="M38 85L55 59L70 77L94 41" fill="none" stroke="#FFFFFF" stroke-width="9"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="38" cy="85" r="5.5" fill="#00B4A6" stroke="#102337" stroke-width="2"/>
+  <circle cx="55" cy="59" r="5.5" fill="#00B4A6" stroke="#102337" stroke-width="2"/>
+  <circle cx="70" cy="77" r="5.5" fill="#00B4A6" stroke="#102337" stroke-width="2"/>
+  <path d="M84 40L98 37L96 51" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
